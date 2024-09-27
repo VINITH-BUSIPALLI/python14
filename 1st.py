@@ -1,15 +1,24 @@
 print("+--------------------------------------+")
 print("|HELLO WE WELCOME YOU TO SIDI SUPERMART|")
-print("+--------------------------------------+\n+--------------------------------------+\n+--------------------------------------+\n+--------------------------------------+\n+--------------------------------------+\n")
+print("+--------------------------------------+")
 print("|  COUSTOMER or ADMIN or EXIT          |")
 print("+--------------------------------------+")
-op=input("PLEASE ENTER YOUR OPTION BELOW\n")
-if op == "coustomer":
-    coustomer_name=input("enter your name:")
-    number=input("enter your number")
-    print("hello"+str(name)+"welcome to SIDI GROCERY")
-elif op =="admin":
-    admin_name=input("enter your name:")
-    password=input("enter the password:")
-    if password == "12345":
-        print("hello admin welcome start your billing process")
+op=input("PLEASE ENTER YOUR OPTION BELOW\n")  
+def login():
+    if op == "coustomer":
+        coustomer_name=input("enter your name:")
+        number=input("enter your number")
+        print("hello"+str(coustomer_name)+"welcome to SIDI GROCERY")
+    elif op =="admin":
+        admin_name=input("enter your name:")
+        password=input("enter the password:")
+    elif op!="coustomer" && op!="admin" && op!="exit" :
+        print("enter a valid option")
+    else :
+        exit()
+def products():
+    product_name=input("enter the product name:")
+    product_price=int(input("enter the product price:"))
+    product_qty=int(input("enter the product quantity adding:"))
+    
+    
