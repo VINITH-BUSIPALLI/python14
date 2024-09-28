@@ -26,5 +26,9 @@ def billing():
     print("+----------------------------------------------------+");
     print("    "+product_name+"        "+str(product_qty)+"        "+str(product_mrp)+"        "+str(product_mrp*0.9));
     print("+-----------------------------------------------------+");
+def toy_store():
+    print(product_name+"    |    "+str(product_mrp));
+    
+    
     
     
